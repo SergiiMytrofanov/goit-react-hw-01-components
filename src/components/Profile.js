@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import defaultImage from './images/default-profile-pecture.jpg';
 
-export default function User ({
+export default function Profile ({
 userName, 
 tag, 
 location, 
@@ -41,7 +41,7 @@ likes,
     );
 }
 
-User.propTypes = {
+Profile.propTypes = {
   userName: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
