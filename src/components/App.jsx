@@ -5,17 +5,16 @@ import user from './user.json';
 export default function App() {
   return (
     <div>
-      {user.map(userProfile => (
-        <Profile
-        userName={userProfile.username}
-        tag={userProfile.tag}
-        location={userProfile.location}
-        profilePhoto={userProfile.avatar}
-        followers={userProfile.stats.followers}
-        views={userProfile.stats.views}
-        likes={userProfile.stats.likes}
+      <Profile
+        userName={user.username}
+        tag={user.tag}
+        location={user.location}
+        profilePhoto={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
         />
-      ))}
+      
     </div>
   );
 };
