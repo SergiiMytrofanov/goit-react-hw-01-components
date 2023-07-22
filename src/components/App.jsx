@@ -1,7 +1,10 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
+import TransactionHistory from './TransactionsHistory/Transactions';
 import userProfiles from '../data/userProfiles.json';
 import statBase from '../data/statBase.json';
+import transHist from '../data/transactionsData.json';
+
 
 export default function App() {
   return (
@@ -23,7 +26,10 @@ export default function App() {
       statData={statBase} 
       />
 
-      
+<TransactionHistory 
+      title="Transaction history" 
+      itemsTable={transHist} 
+      />
     </div>
   );
 }
