@@ -17,12 +17,15 @@ FriendListItem.propTypes = {
 };
 
 const FriendList = ({ friends }) => (
-  <ul className={styles.friendList}>
-    {friends.map(({ id, ...friendData }) => (
-      <FriendListItem key={id} {...friendData} />
-    ))}
-  </ul>
-);
+    <div>
+      <h2>Friend List</h2>
+      <ul className={styles.friendList}>
+        {friends.map(({ id, ...friendData }) => (
+          <FriendListItem key={id} {...friendData} />
+        ))}
+      </ul>
+    </div>
+  );
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
