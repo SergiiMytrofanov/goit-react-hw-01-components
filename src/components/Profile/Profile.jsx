@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import defaultImage from './images/default-profile-picture.jpg';
 
+
 export default function Profile ({
 userName, 
 tag, 

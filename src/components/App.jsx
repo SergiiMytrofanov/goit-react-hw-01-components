@@ -1,7 +1,10 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import TransactionHistory from './TransactionsHistory/Transactions';
+import FriendList from './FriendsList/FriendList';
+
 import userProfiles from '../data/userProfiles.json';
+import friends from '../data/friends.json';
 import statBase from '../data/statBase.json';
 import transHist from '../data/transactionsData.json';
 
@@ -25,6 +28,11 @@ export default function App() {
       title="Upload stats" 
       statData={statBase} 
       />
+
+
+<FriendList 
+friends={friends} />
+
 
 <TransactionHistory 
       title="Transaction history" 
