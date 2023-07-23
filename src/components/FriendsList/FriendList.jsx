@@ -17,8 +17,8 @@ FriendListItem.propTypes = {
 };
 
 const FriendList = ({ friends }) => (
-    <div>
-      <h2>Friend List</h2>
+    <div className={styles.friendListContainer}>
+      <h2 className={styles.FriendListHeadder}>Friends</h2>
       <ul className={styles.friendList}>
         {friends.map(({ id, ...friendData }) => (
           <FriendListItem key={id} {...friendData} />
