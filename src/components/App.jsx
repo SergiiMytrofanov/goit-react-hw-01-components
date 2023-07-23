@@ -25,7 +25,7 @@ export default function App() {
       ))}
 
       <Statistics 
-      title="Upload stats" 
+      title="Upload statistics" 
       statData={statBase} 
       />
 
