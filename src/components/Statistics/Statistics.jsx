@@ -13,7 +13,7 @@ statData,
         {statData.map(({id, label, percentage}) =>(
         <li key={id} className={styles.item}>
           <span className={styles.label}>{label}</span>
-          <span className={styles.percentage}>{percentage}</span>
+          <span className={styles.percentage}>{percentage}%</span>
         </li>
         ))}
       </ul>
