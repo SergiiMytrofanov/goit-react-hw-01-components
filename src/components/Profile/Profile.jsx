@@ -16,7 +16,7 @@ export default function Profile({
       <div className={styles.description}>
         <img src={profilePhoto} alt="User avatar" className={styles.avatar} />
         <p className={styles.name}>{userName}</p>
-        <p className={styles.tag}>&#64{tag}</p>
+        <p className={styles.tag}>@{tag}</p>
         <p className={styles.location}>{location}</p>
       </div>
 
